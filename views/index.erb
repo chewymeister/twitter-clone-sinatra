@@ -1,0 +1,12 @@
+<h1> hello there <%= name %> </h1>
+
+<% if !@user.nil? %>
+  <p>Name: <%= user.name %> </p>
+  <p>Food: <%= user.food %> </p>
+<% end %>
+
+<form method='POST' action"/">
+  <p>Your Name: <input type="text" name='name'></p>
+  <p>Your Favorite Food: <input type="text" name='food'></p>
+  <input type="submit">
+</form>
